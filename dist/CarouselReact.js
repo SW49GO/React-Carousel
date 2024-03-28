@@ -20,8 +20,10 @@ function CarouselReact(_ref) {
     styleNavIcon,
     stylePaging,
     reactIconRight,
-    reactIconLeft
+    reactIconLeft,
+    paging
   } = _ref;
+  const allowPaging = paging !== null && paging !== void 0 ? paging : true;
   const IconRight = (_Fa$reactIconRight = Fa[reactIconRight]) !== null && _Fa$reactIconRight !== void 0 ? _Fa$reactIconRight : Fa.FaAngleRight;
   const IconLeft = (_Fa$reactIconLeft = Fa[reactIconLeft]) !== null && _Fa$reactIconLeft !== void 0 ? _Fa$reactIconLeft : Fa.FaAngleLeft;
   const lengthphoto = photo.length;
@@ -111,7 +113,7 @@ function CarouselReact(_ref) {
         alt: "photos",
         key: index
       });
-    })), /*#__PURE__*/_react.default.createElement("div", {
+    })), allowPaging && /*#__PURE__*/_react.default.createElement("div", {
       style: mergedStylePaging
     }, currentIndex + 1, " / ", lengthphoto));
   } else {

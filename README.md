@@ -61,6 +61,7 @@ export default App
 | `outside`  | boolean| *Position of Icons & Pagination*<br/><sub>default : false</sub>| 
 | `heigthContainer`| string | *Heigth of the container display*|
 |`widthContainer`| string| *Width of the container display*|
+|`paging`|boolean| *Allow to display the Pagination*<br/><sub>default : true</sub>|
 |`styleContainer`| object| *CSS Properties for the container*|
 |`styleNavIcon`|object|*CSS Properties for the icons style*|
 |`stylePaging`|object|*CSS Properties for the paging number style*|

@@ -16,7 +16,7 @@ function App() {
 ]
   return (
     <div style={{width:'20rem', margin:'5rem', display:'flex', justifyContent:'center'}}>
-      <CarouselReact photo={pictures} outside={true} heigthContainer={'10rem'} widthContainer={'85%'} styleContainer={{border:'3px solid #000', paddingBottom:'1rem', backgroundColor:'#5f99dc'}} styleNavIcon={{color:'white', fontSize:'1rem'}} stylePaging={{color:'white'}}  reactIconRight={'FaArrowAltCircleRight'} reactIconLeft={'FaArrowAltCircleLeft'}/>
+      <CarouselReact photo={pictures} outside={true} heigthContainer={'10rem'} widthContainer={'85%'} styleContainer={{borderRadius:'1rem',paddingBottom:'2rem', backgroundColor:'#db3636'}} styleNavIcon={{color:'#dbcc5e', fontSize:'1rem'}} stylePaging={{color:'white'}}  reactIconRight={'FaAngleDoubleRight'} reactIconLeft={'FaAngleDoubleLeft'} paging={false}/>
     </div>
   )
 }

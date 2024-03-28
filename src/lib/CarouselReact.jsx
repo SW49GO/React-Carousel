@@ -2,8 +2,8 @@ import React, { useState } from "react"
 import * as Fa from 'react-icons/fa'
 import * as parms from './parameters'
 
-function CarouselReact ({photo ,outside, heigthContainer, widthContainer, styleContainer, styleNavIcon, stylePaging, reactIconRight, reactIconLeft}){
-
+function CarouselReact ({photo ,outside, heigthContainer, widthContainer, styleContainer, styleNavIcon, stylePaging, reactIconRight, reactIconLeft, paging}){
+    const allowPaging = paging ?? true
     const IconRight = Fa[reactIconRight] ?? Fa.FaAngleRight
     const IconLeft = Fa[reactIconLeft] ?? Fa.FaAngleLeft
     const lengthphoto = photo.length
@@ -65,10 +65,11 @@ function CarouselReact ({photo ,outside, heigthContainer, widthContainer, styleC
                         )
                     })}
                 </div>
+                {allowPaging &&
                 <div style={mergedStylePaging}>
                     {/*Displaying the current frame number in relation to the total number of frames*/}
                     {currentIndex + 1} / {lengthphoto}
-                    </div>
+                </div>}
             </div>
         )
     } else {
