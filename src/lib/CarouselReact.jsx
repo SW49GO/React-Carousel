@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import * as Fa from 'react-icons/fa'
 import * as parms from './parameters'
+import PropTypes from 'prop-types'
 
 function CarouselReact ({photo ,outside, heigthContainer, widthContainer, styleContainer, styleNavIcon, stylePaging, reactIconRight, reactIconLeft, paging}){
     const allowPaging = paging ?? true
@@ -82,5 +83,18 @@ function CarouselReact ({photo ,outside, heigthContainer, widthContainer, styleC
             </div>
             )
     }
+}
+
+CarouselReact.prototype={
+    photo: PropTypes.array.isRequired,
+    outside: PropTypes.bool, 
+    heigthContainer: PropTypes.string, 
+    widthContainer: PropTypes.string, 
+    styleContainer: PropTypes.object, 
+    styleNavIcon: PropTypes.object, 
+    stylePaging: PropTypes.object, 
+    reactIconRight: PropTypes.string, 
+    reactIconLeft: PropTypes.string, 
+    paging: PropTypes.bool
 }
 export default CarouselReact

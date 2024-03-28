@@ -1,6 +1,6 @@
 {
   "name": "react-carousel-sw49go",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Custom React Carousel",
   "main": "dist/index.js",
   "module": "dist/index.js",
