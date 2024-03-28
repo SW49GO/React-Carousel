@@ -17,4 +17,4 @@ paging?:boolean
 
 declare const CarouselReact: React.FunctionComponent<CarouselReactProps>
 
-export default Carousel
+export default CarouselReact
