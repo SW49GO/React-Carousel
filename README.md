@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Carousel React components created using `create-react-app` by SW49GO
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Presentation :
+This is a reusable React component that allows you to display a customizable Carousel in your application.
 
-## Available Scripts
+The component is TypeScript compatible and includes a type definition file (CarouselReact.d.ts) for an improved development experience. In a TypeScript project, the TypeScript compiler will automatically use this definition file.
 
-In the project directory, you can run:
+### Examples Custom style :
+<img src="https://raw.githubusercontent.com/SW49GO/React-Carousel/master/public/assets/example.jpg" alt="carousel"/>
 
-### `npm start`
+## Installing the package in your project:
+```bash
+npm i carousel-react-sw49go
+```
+## Prerequisites :
+- Node.js v18.16.0
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Dependencies to install :
+- "react": "^18.2.0"
+- "react-dom": "^18.2.0"
+- "prop-types": "^15.8.1"
+- "react-icons": "^5.0.1"
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Imported the component into your project:
+```
+import {CarouselReact } from 'react-carousel-sw49go'
 
-### `npm test`
+function App() {
+    // Resource list in an array:
+        const pictures =  [
+            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
+            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg",
+            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-3.jpg",
+            "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-4.jpg"
+        ]
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  return (
+    <div className='yourStyleContainer'>
+      <CarouselReact 
+            photo={pictures} 
+            outside={true} 
+            heightContainer={'10rem'} 
+            widthContainer={'85%'} 
+            styleContainer={{border:'3px solid #000', paddingBottom:'1rem', backgroundColor:'#5f99dc'}} 
+            styleNavIcon={{color:'#fff', fontSize:'1rem'}} 
+            stylePaging={{color:'#fff'}}  
+            reactIconRight={'FaArrowAltCircleRight'} 
+            reactIconLeft={'FaArrowAltCircleLeft'}/>
+    </div>
+  )
+}
 
-### `npm run build`
+export default App
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Using the different component options (Props):
+| Props| Type| Description |
+|:--- |:---: |------|
+||||
+| `photo`    | array | *List of resource pictures*| 
+| `outside`  | boolean| *Position of Icons & Pagination*<br/><sub>default : false</sub>| 
+| `heigthContainer`| string | *Heigth of the container display*|
+|`widthContainer`| string| *Width of the container display*|
+|`styleContainer`| object| *CSS Properties for the container*|
+|`styleNavIcon`|object|*CSS Properties for the icons style*|
+|`stylePaging`|object|*CSS Properties for the paging number style*|
+|`reactIconRight`|string| *Name of Right icon from React Icons (Font Awesome 5)*<br/><sub>default icon : 'FaAngleRight'</sub>|
+|`reactIconLeft`|string| *Name of Left icon from React Icons (Font Awesome 5)*<br/><sub>default icon : 'FaAngleLeft'</sub>|
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -20,6 +20,6 @@ export const styleCarousel = {
     hidden:{display: 'none'},
     image:{width: '100%',height: '100%',objectFit: 'cover',borderRadius: '.625rem'},
     navigation:{position:'relative', display:'flex',justifyContent: 'space-between',width: '99%', margin: '0 auto', top:'1rem'},
-    navIcon:{position:'relative', top:'6rem',fontSize: '2rem',zIndex: '5',color:'#000'},
+    navIcon:{position:'relative', top:'6rem',fontSize: '2rem',zIndex: '5',color:'#000',padding:'0.4rem'},
     number:{position:'relative', textAlign:'center', color :'#000', top:'-1.5rem'}
 }
