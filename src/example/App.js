@@ -15,8 +15,8 @@ function App() {
     "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-6.jpg"
 ]
   return (
-    <div style={{width:'25rem', margin:'5rem'}}>
-      <CarouselReact photo={pictures} lenghtPhoto={11} outside={true}/>
+    <div style={{width:'20rem', margin:'5rem', display:'flex', justifyContent:'center'}}>
+      <CarouselReact photo={pictures} outside={true} heightContainer={'10rem'} widthContainer={'80%'} styleContainer={{border:'1px solid #000', marginBotton:'1rem'}}/>
     </div>
   )
 }

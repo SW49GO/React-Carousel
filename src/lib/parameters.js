@@ -13,12 +13,13 @@ export const pictures =  [
 ]
 
 export const styleCarousel = {
+    parentContainer : { width:'25rem'},
     container:{position: 'relative', height: '15rem'},
     position:{position:'absolute'},
     show:{display:'block'},
     hidden:{display: 'none'},
     image:{width: '100%',height: '100%',objectFit: 'cover',borderRadius: '.625rem'},
-    navigation:{position:'absolute', display:'flex',justifyContent: 'space-between',width: '99%', margin: '0 auto'},
+    navigation:{position:'relative', display:'flex',justifyContent: 'space-between',width: '99%', margin: '0 auto', top:'1rem'},
     navIcon:{position:'relative', top:'6rem',fontSize: '2rem',zIndex: '5',color:'#000'},
-    number:{position:'absolute', textAlign:'center',left:'45%', bottom: '3%', color :'#000'}
+    number:{position:'relative', textAlign:'center', color :'#000', top:'-1.5rem'}
 }
