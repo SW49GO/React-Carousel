@@ -10,7 +10,7 @@ The component is TypeScript compatible and includes a type definition file (Caro
 
 ## Installing the package in your project:
 ```bash
-npm i carousel-react-sw49go
+npm i react-carousel-sw49go
 ```
 ## Prerequisites :
 - Node.js v18.16.0
